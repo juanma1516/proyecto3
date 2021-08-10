@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author"
+    content="Rodriguez Lucas Maximiliano, Isa Jara Ramiro Fernando, Lopez Duchen Nicolas Angel, Silvetti Tomas, Benitez Camozzi Juan Manuel, Ocampo Edgardo">
+  <title>MovieClub</title>
+  <link rel="icon" href="img/movieclub.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a2d1e44e25.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="img/logo-sin-fondo.png">
+</head>
+
+<body class="font-pagina">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark color-primario">
+      <div class="container">
+        <a class="navbar-brand titulo-cursiva active" aria-current="page" href="../index.html">
+          <p class="navbar-titulo-blog"> <img src="img/logo-sin-fondo.png" class="logo-navbar"
+              alt="logo de la pagina">MovieClub</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbarblog"
+          aria-controls="Navbarblog" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Navbarblog">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="/pages/login.html">Login</a>
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link" target="_blank" href="/pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-2" target="_blank" href="/pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-2" target="_blank" href="/pages/galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-2" target="_blank" href="/pages/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-info ms-4" type="button" data-bs-toggle="modal"
+                data-bs-target="#botonsuscribirse">Suscribirse</button>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <section>
+      <div id="sliderMovies" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#sliderMovies" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#sliderMovies" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#sliderMovies" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#sliderMovies" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner images_car">
+          <div class="carousel-item active">
+            <img src="/img/1.jpg" class="d-block w-100" alt="mortal combat">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/2.jpg" class="d-block w-100" alt="aquaman">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/3.jpg" class="d-block w-100" alt="dog detective">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/4.jpg" class="d-block w-100" alt="avengers">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#sliderMovies" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#sliderMovies" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <div class='container'>
+
+      <section class="py-3 row">
+        <article class="col-sm-12 col-md-7 col-lg-8 box cards_">
+          <div class="card shadow border-secondary">
+            <div class="card-body card_duple" id="b1">
+              <div>
+                <img class="d-block w-75" src="/img/blog1.jpg" alt="Space jam new">
+              </div>
+              <div>
+                <h5 class="card-title text-primary"> Space Jam <span class="badge bg-danger">Estreno</span> </h5>
+                <p class="card-text text_p">
+                  El campeón de la NBA e ícono mundial LeBrom James junto a Bugs Bunny protagonizan una aventura épica.
+                  ¡Bienvenidos al partido del siglo!
+                </p>
+                <div class="mt"> <a href="/pages/galeria.html" tabindex="0" target="_blank"
+                    class="btn bg-blue-ui white read badge rounded-pill bg-warning text-dark">Ver más</a> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card shadow border-secondary my-3">
+            <div class="card-body card_duple">
+              <div>
+                <img class="d-block w-75" src="/img/blog2.jpg" alt="Stillwater">
+              </div>
+              <div>
+                <h5 class="card-title text-primary"> Stillwater </h5>
+                <p class="card-text text_p">
+                  Un rudo operario viaja a Marsella para visitar a su hija que está en prisión. Las cosas no serán fáciles para un padre dispuesto a demostrar su inocencia.
+                </p>
+                <div class="mt"> <a href="#" tabindex="0"
+                    class="btn bg-blue-ui white read badge rounded-pill bg-warning text-dark">Ver más</a> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card shadow border-secondary my-3">
+            <div class="card-body card_duple">
+              <div>
+                <img class="d-block w-75" src="/img/blog3.jpg"  alt="Maverick">
+              </div>
+              <div>
+                <h5 class="card-title text-primary"> Top Gun Maverick <span class="badge bg-danger">Estreno</span> </h5>
+                <p class="card-text text_p">
+                  Después de más de 30 años como uno de los mejores aviadores de la Armada, Pete ‘Maverick’ Mitchell está evitando el rango que le dejaría en tierra.
+                </p>
+                <div class="mt"> <a href="#" tabindex="0"
+                    class="btn bg-blue-ui white read badge rounded-pill bg-warning text-dark">Ver más</a> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card shadow border-secondary my-3">
+            <div class="card-body card_duple">
+              <div>
+                <img src="/img/blog4.jpeg" class="d-block w-75" alt="Godzilla, King Kong">
+              </div>
+              <div>
+                <h5 class="card-title text-primary"> Godzilla vs. Kong</h5>
+                <p class="card-text text_p">
+                  Dos de las fuerzas más poderosas de un planeta habitado por aterradoras criaturas, se enfrentan en un combate que sacude los cimientos de la humanidad. 
+                </p>
+                <div class="mt"> <a href="#" tabindex="0"
+                    class="btn bg-blue-ui white read badge rounded-pill bg-warning text-dark">Ver más</a> </div>
+              </div>
+            </div>
+          </div>
+
+
+        </article>
+
+        <article class="col-sm-12 col-md-5 col-lg-4 box cards_">
+          <div class="card shadow border-secondary">
+            <div class="card-body card_duple" id="b1">
+              <div>
+                <img src="/img/search.jpg" class="d-block w-75" alt="Buscar contenido">
+              </div>
+              <div class="form_">
+                <form class="d-flex my-2 search_ form_">
+                  <input class="form-control me-2" type="search" placeholder="Escriba algo ..." aria-label="Search">
+                  <button class="btn btn-outline-primary my-2 button_" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="py-3">
+            <h4 class="display-6"> Categorías </h4>
+            <div class="accordion" id="acordionSecurity">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button text-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    Acción
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                  aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body p2">
+                    <strong>Encontrarás las mejores películas de acción y aventura.</strong>
+                    Para ver nuestro catálogo <a href="../pages/error.html" tabindex="0" class="bg-blue-ui white read">pulsa aquí</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="accordion-button text-primary collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    Drama y suspenso
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body p2">
+                    <strong>Encontrarás las últimas películas de terror, drama y suspenso.</strong>
+                    Para ver nuestro catálogo <a href="../pages/error.html" tabindex="0" class="bg-blue-ui white read">pulsa aquí</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button class="accordion-button text-primary collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    Ciencia ficción
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body p2">
+                    <strong>Encontrarás los mejores estrenos en ciencia ficción.</strong>
+                    Para ver nuestro catálogo <a href="../pages/error.html" tabindex="0" class="bg-blue-ui white read">pulsa aquí</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                  <button class="accordion-button text-primary collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    Comedia y romance
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingFour">
+                  <div class="accordion-body p2">
+                    <strong>Encontrarás los mejores estrenos en comedia clásica y romántica.</strong>
+                    Para ver nuestro catálogo <a href="../pages/error.html" tabindex="0" class="bg-blue-ui white read">pulsa aquí</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-none d-md-block">
+            <div id="sliderPubli" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#sliderMovies" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#sliderPubli" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#sliderPubli" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner images_car">
+                <div class="carousel-item active">
+                  <img src="/img/publi1.jpg" class="d-block w-100" alt="Cine Mark">
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/publi2.jpg" class="d-block w-100" alt="Supercines">
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/publi3.jpg" class="d-block w-100" alt="Cine Argentino">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#sliderPubli" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#sliderPubli" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+          </div>
+
+        </article>
+
+        <nav aria-label="...">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1">Previous</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <hr>
+    </div>
+    <div class="py-3">
+      <section class="container box2">
+        <div>
+          <h3 class="text-dark"> Déjanos tus comentarios en nuestro blog </h3>
+        </div>
+        <div class="margin-1">
+          <img src="img/comment.jpg" width="220" alt="logo apple">
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <!-- modal boton suscripcion -->
+    <div class="modal fade" id="botonsuscribirse" tabindex="-1" aria-labelledby="botonsuscribirselabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="botonsuscribirselabel">Suscribete</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="emailinput" class="form-label">Direccion E-mail</label>
+                <input type="email" class="form-control" id="emailinput" aria-describedby="emailayuda" required>
+                <div id="emailayuda" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+              </div>
+              <div class="mb-3">
+                <label for="contraseñainput" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="contraseñainput" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="row color-primario text-light container-fluid py-3 m-0">
+      <div class="col-sm-12 col-md-4 div-flex">
+        <img src="img/logo-sin-fondo.png" class="width-img centrar" alt="logo de la pagina">
+      </div>
+      <div class="col-sm-12 col-md-4 mt-4">
+        <section class="footer-flex">
+          <button class="btn btn-info boton-suscribete-footer" data-bs-toggle="modal"
+            data-bs-target="#botonsuscribirse">Unete a MovieClub</button>
+        </section>
+        <ul class="mt-3 footer-ul">
+          <li>Reseñas nuevas todos los dias</li>
+          <li>Criticas</li>
+          <li>Licencia de por vida</li>
+          <li>Acceso a todo el contenido</li>
+        </ul>
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <h5>Seguinos en nuestras redes:</h5>
+        <section class="texto-centrado">
+          <a target="_blank" href="#"><i class="fab fa-facebook-square fa-2x text-light me-1"></i></a>
+          <a href="#"><i class="fab fa-twitter-square fa-2x text-light me-1"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x text-light me-1"></i></a>
+        </section>
+      </div>
+    </section>
+  </footer>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

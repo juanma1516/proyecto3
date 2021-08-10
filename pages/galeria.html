@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Rodriguez Lucas Maximiliano, Isa Jara Ramiro Fernando, Lopez Duchen Nicolas Angel, Silvetti Tomas, Benitez Camozzi Juan Manuel, Ocampo Edgardo">
+    <title>MovieClub</title>
+    <link rel="icon" href="../img/movieclub.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a2d1e44e25.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../img/logo-sin-fondo.png">
+</head>
+<body class="font-pagina">
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-dark color-primario">
+      <div class="container">
+        <a class="navbar-brand titulo-cursiva active" aria-current="page" href="../index.html">
+          <p class="navbar-titulo-blog"> <img src="../img/logo-sin-fondo.png" class="logo-navbar"
+              alt="logo de la pagina">MovieClub</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbarblog"
+          aria-controls="Navbarblog" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Navbarblog">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item ms-3">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link" target="_blank" href="/pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-2" target="_blank" href="../pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-2 active" target="_blank" href="/pages/galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-2" target="_blank" href="/pages/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-info ms-4" type="button" data-bs-toggle="modal"
+                data-bs-target="#botonsuscribirse">Suscribirse</button>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    </header>
+    <main class="container">
+        <h2 class="display-2 text-center mt-3">Peliculas en cartelera</h2>
+        <section class="row">
+            <div class="col-sm-12 col-md-4 col-lg-3 my-3 d-flex justify-content-center">
+                <div class="card">
+                    <img src="../img/blog2.jpg"  class="card-img-top h-img" alt="pelicula en estreno: Stillwater">
+                    <div class="mt-3">
+                        <button class="btn btn-primary mb-3 ms-2 position-relative" data-bs-toggle="modal" data-bs-target="#modal-stillwater">ver mas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">nuevo</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 my-3 d-flex justify-content-center">
+              <div class="card">
+                  <img src="../img/blog4.jpeg"  class="card-img-top h-img" alt="pelicula en estreno: Godzilla vs Kong">
+                  <div class="mt-3">
+                      <button class="btn btn-primary mb-3 ms-2 position-relative" data-bs-toggle="modal" data-bs-target="#modal-kong">ver mas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">nuevo</span></button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 my-3 d-flex justify-content-center">
+            <div class="card">
+                <img src="../img/peliculas-en-cartelera/El-planeta-salvaje.jpg"  class="card-img-top h-img" alt="pelicula en estreno: El planeta salvaje">
+                <div class="mt-3">
+                    <button class="btn btn-primary mb-3 ms-2 position-relative" data-bs-toggle="modal" data-bs-target="#modal-el-planeta-salvaje">ver mas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">nuevo</span></button>
+                </div>
+            </div>
+        </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 my-3 d-flex justify-content-center">
+                <div class="card">
+                    <img src="../img/peliculas-en-cartelera/Redemption-day.jpg"  class="card-img-top h-img" alt="pelicula en estreno: Redemption day">
+                    <div class="mt-3">
+                        <button class="btn btn-primary mb-3 ms-2 position-relative" data-bs-toggle="modal" data-bs-target="#modal-Redemption-day">ver mas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">nuevo</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 my-3 d-flex justify-content-center">
+                <div class="card">
+
+                    <img src="../img/peliculas-en-cartelera/sector-vip.jpg"  class="card-img-top h-img" alt="pelicula en estreno: Sector vip">
+                    <div class="mt-3">
+                        <button class="btn btn-primary mb-3 ms-2 position-relative" data-bs-toggle="modal" data-bs-target="#modal-sector-vip">ver mas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">nuevo</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 my-3 d-flex justify-content-center">
+                <div class="card">
+                    <img src="../img/peliculas-en-cartelera/The-tomorrow-war.jpg"  class="card-img-top h-img" alt="pelicula en estreno: The tomorrow war">
+                    <div class="mt-3">
+                        <button class="btn btn-primary mb-3 ms-2 position-relative" data-bs-toggle="modal" data-bs-target="#modal-the-tomorrow-war">ver mas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">nuevo</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 my-3 d-flex justify-content-center">
+                <div class="card">
+                    <img src="../img/peliculas-en-cartelera/Un-jefe-en-pañales-p2.jpg"  class="card-img-top h-img" alt="pelicula en estreno: Un jefe en pañales 2">
+                    <div class="mt-3">
+                        <button class="btn btn-primary mb-3 ms-2 position-relative" data-bs-toggle="modal" data-bs-target="#modal-un-jefe-en-pañales">ver mas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">nuevo</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 my-3 d-flex justify-content-center">
+                <div class="card">
+                    <img src="../img/peliculas-en-cartelera/Un-lugar-en-silencio-p2.jpg"  class="card-img-top h-img" alt="pelicula en estreno: Un lugar en silencio ">
+                    <div class="mt-3">
+                        <button class="btn btn-primary mb-3 ms-2 position-relative" data-bs-toggle="modal" data-bs-target="#modal-un-lugar-en-silencio">ver mas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">nuevo</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h2 class="display-2 text-center">Proximos estrenos en cine</h2>
+        <section class="row">
+            <div class="col-sm-12 col-md-4 col-lg-3 my-3 d-flex justify-content-center">
+                <div class="card">
+                    <img src="../img/proximos-estrenos/blackpink.jpg"  class="card-img-top h-img" alt="pelicula, proximos estrenos: Blackpink">
+                    <div class="mt-3">
+                        <button class="btn btn-primary mb-3 ms-2 position-relative" data-bs-toggle="modal" data-bs-target="#modal-blackpink">ver mas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">nuevo</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 my-3 d-flex justify-content-center">
+                <div class="card">
+                    <img src="../img/proximos-estrenos/bon-dieu.jpg"  class="card-img-top h-img" alt="pelicula, proximos estrenos: Bon dieu">
+                    <div class="mt-3">
+                        <button class="btn btn-primary mb-3 ms-2 position-relative" data-bs-toggle="modal" data-bs-target="#modal-bon-dieu">ver mas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">nuevo</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 my-3 d-flex justify-content-center">
+                <div class="card">
+
+                    <img src="../img/proximos-estrenos/el-territorio-del-amor.jpg"  class="card-img-top h-img" alt="pelicula, proximos estrenos: El territorio del amor">
+                    <div class="mt-3">
+                        <button class="btn btn-primary mb-3 ms-2 position-relative" data-bs-toggle="modal" data-bs-target="#modal-el-territorio-del-amor">ver mas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">nuevo</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 my-3 d-flex justify-content-center">
+                <div class="card">
+                    <img src="../img/proximos-estrenos/jungle-cruise.jpg"  class="card-img-top h-img" alt="pelicula, proximos estrenos: Jungle cruise">
+                    <div class="mt-3">
+                        <button class="btn btn-primary mb-3 ms-2 position-relative" data-bs-toggle="modal" data-bs-target="#modal-jungle-cruise">ver mas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">nuevo</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 my-3 d-flex justify-content-center">
+                <div class="card">
+                    <img src="../img/proximos-estrenos/las-ranas.jpg"  class="card-img-top h-img" alt="pelicula, proximos estrenos: Las ranas">
+                    <div class="mt-3">
+                        <button class="btn btn-primary mb-3 ms-2 position-relative" data-bs-toggle="modal" data-bs-target="#modal-las-ranas">ver mas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">nuevo</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 my-3 d-flex justify-content-center">
+                <div class="card">
+                    <img src="../img/proximos-estrenos/tiempo.jpg"  class="card-img-top h-img" alt="pelicula, proximos estrenos: Tiempo ">
+                    <div class="mt-3">
+                        <button class="btn btn-primary mb-3 ms-2 position-relative" data-bs-toggle="modal" data-bs-target="#modal-tiempo">ver mas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">nuevo</span></button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </section>
+        <div class="py-3">
+          <section class="container box2">
+            <div>
+              <h3 class="text-dark"> Déjanos tus comentarios en nuestro blog </h3>
+            </div>
+            <div class="margin-1">
+              <img src="../img/comment.jpg" width="220" alt="logo apple">
+            </div>
+          </section>
+        </div>
+    </main>
+
+    <!-- modal stillwater -->
+    <div class="modal fade" id="modal-stillwater" tabindex="-1" aria-labelledby="modal-stillwaterLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-stillwaterLabel">Stillwater</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modal-img-center">
+                <img src="../img/blog2.jpg" class="card-img-top w-50" alt="pelicula en estreno: Stillwater">
+
+                <p class="mt-3 text_p">
+                  <b> Sinopsis: </b>
+                  Bill Baker (Matt Damon) es un rudo operario de una plataforma petrolífera estadounidense que viaja a Marsella para visitar a su hija, que está en prisión por un asesinato que afirma no haber cometido. Lejos de casa, las cosas no serán nada fáciles para un padre dispuesto a todo para demostrar la inocencia de su hija....</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- modal Kong -->
+    <div class="modal fade" id="modal-kong" tabindex="-1" aria-labelledby="modal-kongLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-kongLabel">Godzilla vs Kong </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body modal-img-center">
+              <img src="../img/blog4.jpeg" class="card-img-top w-50" alt="pelicula en estreno: Godzilla vs Kong">
+
+              <p class="mt-3 text_p">
+                <b> Sinopsis: </b>
+                Godzilla y Kong, dos de las fuerzas más poderosas de un planeta habitado por aterradoras criaturas, se enfrentan en un espectacular combate que sacude los cimientos de la humanidad....</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+          <!-- modal el-planeta-salvaje -->
+          <div class="modal fade" id="modal-el-planeta-salvaje" tabindex="-1" aria-labelledby="modal-el-planeta-salvajeLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal-el-planeta-salvajeLabel">El planeta salvaje</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-img-center">
+                    <img src="../img/peliculas-en-cartelera/El-planeta-salvaje.jpg" class="card-img-top w-50" alt="pelicula en estreno: El planeta salvaje">
+      
+                    <p class="mt-3 text_p">
+                      <b> Sinopsis: </b>
+                        En el lejano planeta Ygam viven unas criaturas gigantescas llamadas “Draags” que han domesticado a los pequeños "Oms", seres humanos que están siendo exterminados. Pero un Om consigue escapar...</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      <!-- modal redemption day -->
+      <div class="modal fade" id="modal-Redemption-day" tabindex="-1" aria-labelledby="modal-Redemption-dayLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-Redemption-dayLabel">Redemption day</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modal-img-center">
+                <img src="../img/peliculas-en-cartelera/Redemption-day.jpg" class="card-img-top w-50" alt="pelicula en estreno: Redemption day">
+                
+                <p class="mt-3 text_p">
+                  <b> Sinopsis: </b>
+                    El Día de la Redención es una película de secuestros, acción e intriga en la que un Marine de los Estados Unidos se infiltra en un grupo terrorista para liberar a unos rehenes. Hacía tiempo que no veíamos a Andy García (le vimos recientemente en Ana)</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal sector vip -->
+      <div class="modal fade" id="modal-sector-vip" tabindex="-1" aria-labelledby="modal-sector-vipLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-sector-vipLabel">Sector vip</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modal-img-center">
+                <img src="../img/peliculas-en-cartelera/sector-vip.jpg" class="card-img-top w-50" alt="pelicula en estreno: Sector vip">
+                <p class="mt-3 text_p">
+                  <b> Sinopsis: </b>
+                    Una chica llega a la ciudad a trabajar de bailarina, un empresario de RRPP se transforma en su manager. Un periodista en descenso busca la noticia que lo catapulte. Los tres confluyen en el Sector Vip, donde conviven la trata de personas, las fake news y las transgresiones del poder.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal the tomorrow war -->
+      <div class="modal fade" id="modal-the-tomorrow-war" tabindex="-1" aria-labelledby="modal-the-tomorrow-warLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-the-tomorrow-warLabel">The tomorrow war</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modal-img-center">
+                <img src="../img/peliculas-en-cartelera/The-tomorrow-war.jpg" class="card-img-top w-50" alt="pelicula en estreno: The tomorrow war">
+                <p class="mt-3 text_p">
+                  <b> Sinopsis: </b>
+                    Un hombre es reclutado para luchar en una guerra futura donde el destino de la humanidad depende de su capacidad para enfrentarse a su pasado.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal un jefe en pañales -->
+      <div class="modal fade" id="modal-un-jefe-en-pañales" tabindex="-1" aria-labelledby="modal-un-jefe-en-pañalesLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-un-jefe-en-pañalesLabel">Un jefe en pañales</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modal-img-center">
+                <img src="../img/peliculas-en-cartelera/Un-jefe-en-pañales-p2.jpg" class="card-img-top w-50" alt="pelicula en estreno: Unjefe en pañales">
+                <p class="mt-3 text_p">
+                  <b> Sinopsis: </b>
+                    Los hermanos Templeton, Tim y su hermanito Ted, son ahora adultos, pero se han distanciado con el paso del tiempo. Tim es ahora un padre de familia felizmente casado. Ted, en cambio, es director general de un fondo de inversión. Pero un nuevo bebé jefazo con un innovador enfoque y una dinámica actitud está a punto de volver a unirlos… y de inspirar un nuevo negocio familiar. Tim y su esposa Carol, toda una supermamá, viven en un tranquilo barrio de las afueras con su hija superdotada de 7 años Tabitha y la irresistible benjamina de la casa, la bebé Tina. Tabitha, que es la número uno de su clase en un prestigioso centro para niños superinteligentes, tiene idealizado a su tío Ted y quiere ser como él de mayor, pero a Tim le preocupa que esté estudiando demasiado en vez de disfrutar de una infancia normal. Cuando la pequeña Tina revela, para sorpresa de todos, que es una superagente secreta de BabyCorp y que su misión es destapar los oscuros secretos tras la escuela de Tabitha y su misterioso fundador, el Dr. Armstrong, volverá a unir a los hermanos Templeton del modo más insospechado, haciéndoles replantearse el significado de la familia y descubrir lo que de verdad importa</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal un lugar en silencio -->
+      <div class="modal fade" id="modal-un-lugar-en-silencio" tabindex="-1" aria-labelledby="modal-un-lugar-en-silencioLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-un-lugar-en-silencioLabel">Un lugar en silencio</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modal-img-center">
+                <img src="../img/peliculas-en-cartelera/Un-lugar-en-silencio-p2.jpg" class="card-img-top w-50" alt="pelicula en estreno: Un lugar en silencio">
+                <p class="mt-3 text_p">
+                  <b> Sinopsis: </b>
+                    Tras los fatales acontecimientos sucedidos en la primera parte, la familia Abbot (Emily Blunt, Millicent Simmonds y Noah Jupe) debe enfrentarse a los peligros del mundo exterior mientras luchan en silencio por sobrevivir.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- modal black pink -->
+    <div class="modal fade" id="modal-blackpink" tabindex="-1" aria-labelledby="modal-blackpinkLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-blackpinkLabel">BlackPink</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modal-img-center">
+                <img src="../img/proximos-estrenos/blackpink.jpg" class="card-img-top w-50" alt="pelicula en estreno: Blackpink">
+                <p class="mt-3 text_p">
+                  <b> Sinopsis: </b>
+                    Película que conmemora el quinto aniversario del debut del amado grupo mundial, BLACKPINK, que consta de cuatro miembros: Jisoo, Jennie, Rosé y Lisa.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal bon dieu -->
+      <div class="modal fade" id="modal-bon-dieu" tabindex="-1" aria-labelledby="modal-bon-dieuLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-bon-dieuLabel">Bon dieu?</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modal-img-center">
+                <img src="../img/proximos-estrenos/bon-dieu.jpg" class="card-img-top w-50" alt="pelicula en estreno: Bon dieu?">
+                <p class="mt-3 text_p">
+                  <b> Sinopsis: </b>
+                    Claude y Marie Verneuil, que pasaron un mal rato cuando tuvieron que hacerse a la idea de que sus cuatro hijas se casaban con maridos de origen extranjero, aunque acabaron aceptándolo, atraviesan de nuevo una crisis. Los cuatro yernos, Rachid, David, Chao y Charles, han decidido irse de Francia por motivos distintos. Los Verneuil se ven ya viviendo en el extranjero</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal el territorio del amor -->
+      <div class="modal fade" id="modal-el-territorio-del-amor" tabindex="-1" aria-labelledby="modal-el-territorio-del-amorLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-el-territorio-del-amorLabel">El territorio del amor</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modal-img-center">
+                <img src="../img/proximos-estrenos/el-territorio-del-amor.jpg" class="card-img-top w-50" alt="pelicula en estreno: el territorio del amor">
+                <p class="mt-3 text_p">
+                  <b> Sinopsis: </b>
+                    María tiene 30 años, es impaciente, rebelde y experta en holandés. Olivier tiene la misma edad, es lento, tímido y habla catorce idiomas. Se encuentran en Taiwán. Y luego, de repente, el nuevo rayo. Es su historia. El de la increíble fuerza de un amor. Y el de sus confines, donde todo empieza a soltarse. Excepto María</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal jungle cruise -->
+      <div class="modal fade" id="modal-jungle-cruise" tabindex="-1" aria-labelledby="modal-jungle-cruiseLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-jungle-cruiseLabel">Jungle cruise</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modal-img-center">
+                <img src="../img/proximos-estrenos/jungle-cruise.jpg" class="card-img-top w-50" alt="pelicula en estreno: Jungle cruise">
+                <p class="mt-3 text_p">
+                  <b> Sinopsis: </b>
+                    Adaptación inspirada en la emblemática atracción del Magic Kingdom. Se trata de una de las 22 atracciones originales que el parque tenía cuando abrió en 1955, donde los participantes viajan a través de un río en medio de una jungla guiados por un capitán, encontrando criaturas salvajes en el camino, como pirañas y gorilas.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal las ranas -->
+      <div class="modal fade" id="modal-las-ranas" tabindex="-1" aria-labelledby="modal-las-ranasLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-las-ranasLabel">Las ranas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modal-img-center">
+                <img src="../img/proximos-estrenos/las-ranas.jpg" class="card-img-top w-50" alt="pelicula en estreno: Unjefe en pañales">
+                <p class="mt-3 text_p">
+                  <b> Sinopsis: </b>
+                    Cada semana, una joven visita al hombre que ama, que está encerrado en la cárcel a pocas horas de Buenos Aires. Sola, decidida, se las arregla lo mejor que puede para cumplir su misión (proporcionarle comida, drogas y amor a su novio) y mantener intacta a su pareja.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal tiempo -->
+      <div class="modal fade" id="modal-tiempo" tabindex="-1" aria-labelledby="modal-tiempoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-tiempoLabel">Tiempo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modal-img-center">
+                <img src="../img/proximos-estrenos/tiempo.jpg" class="card-img-top w-50" alt="pelicula en estreno: Tiempo">
+                <p class="mt-3 text_p">
+                  <b> Sinopsis: </b>
+                    Una playa en la que la gente envejece en un día</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- modal boton suscripcion -->
+    <div class="modal fade" id="botonsuscribirse" tabindex="-1" aria-labelledby="botonsuscribirselabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="botonsuscribirselabel">Suscribete</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="emailinput" class="form-label">Direccion E-mail</label>
+                      <input type="email" class="form-control" id="emailinput" aria-describedby="emailayuda" required>
+                      <div id="emailayuda" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="contraseñainput" class="form-label">Contraseña</label>
+                      <input type="password" class="form-control" id="contraseñainput" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer>
+      <section class="row color-primario text-light container-fluid py-3 m-0">
+        <div class="col-sm-12 col-md-4 div-flex">
+          <img src="../img/logo-sin-fondo.png" class="width-img centrar" alt="logo de la pagina">
+        </div>
+        <div class="col-sm-12 col-md-4 mt-4">
+          <section class="footer-flex">
+            <button class="btn btn-info boton-suscribete-footer" data-bs-toggle="modal" data-bs-target="#botonsuscribirse">Unete a MovieClub</button>
+          </section>
+            <ul class="mt-3 footer-ul">
+              <li>Reseñas nuevas todos los dias</li>
+              <li>Criticas</li>
+              <li>Licencia de por vida</li>
+              <li>Acceso a todo el contenido</li>
+            </ul>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <h5>Seginos en nuestras redes:</h5>
+          <section class="texto-centrado">
+            <a target="_blank" href="#"><i class="fab fa-facebook-square fa-2x text-light me-1"></i></a>
+            <a href="#"><i class="fab fa-twitter-square fa-2x text-light me-1"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x text-light me-1"></i></a>
+          </section>
+        </div>
+      </section>
+    </footer>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

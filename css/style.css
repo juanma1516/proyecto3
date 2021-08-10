@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.titulo-cursiva{
+    font-family: 'Lobster', cursive;
+}
+.font-pagina{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.boton-suscribete-footer{
+    display: flex;
+    
+}
+
+.card-img-size{
+    width: 100%;
+}
+
+.modal-img-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.h-img{
+    height: 300px;
+}
+
+.box2{
+    color: honeydew;
+    padding: 30px;
+    text-align: center;
+}
+
+.color-primario{
+    background: #DC7A1E;
+}
+
+.navbar-titulo-blog{
+    font-size: 30px;
+}
+
+.logo-navbar{
+    width: 10%;
+}
+
+.search_{
+    width: 200px;
+}
+
+.card_duple{
+    display: flex;
+    justify-content: space-around;
+}
+
+.border_{
+    border-style: solid;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+
+}
+.card_duple1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#enviar{
+    background: #DC7A1E;
+    border-color: #DC7A1E;
+    width: 100px;
+}
+#enviar2{
+    background: #DC7A1E;
+    border-color: #DC7A1E;
+    width: 250px;
+}
+.fa-user{
+    color: #DC7A1E;
+}
+.fa-envelope{
+    color: #DC7A1E;
+}
+
+#boton {
+    background: #e27e21;
+    border-color: #e27e21;
+
+}
+
+.fas, .fab {
+    color:#DC7A1E  ;
+}
+
+
+.form_{
+    display: flex;
+    flex-direction: column;
+}
+
+.button_{
+    width: 100px;
+}
+
+.text_p{
+    text-align: justify;
+}
+
+.p2{
+    text-align: justify;
+}
+.footer-ul{
+    padding: 0%;
+}
+
+.boton-suscribete-footer{
+    display: flex;
+    
+}
+
+.foto-perfil {
+    border-radius: 50%; 
+    width: 100%; height: 
+    100%;
+}
+
+@media (min-width: 992px){
+    .width-img{
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 768px){
+    
+    .width-img{
+        width: 75%;
+    }
+
+    .button_{
+        width: 90px;
+    }
+
+    .search_{
+        width: 200px;
+    }
+
+    .h-img{
+        height: 200px;
+    }
+
+    .rob img{
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 576px){
+    .width-img{
+        width: 50%;
+    }
+    .div-flex{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .texto-centrado{
+        text-align: center;
+    }
+
+    .button_{
+        width: 90px;
+    }
+
+    .search_{
+        width: 200px;
+    }
+
+    .texto-centrado{
+        text-align: center;
+    }
+    .h-img{
+        height: 300px;
+       width: 230px !important;
+    }
+
+    .images_car img{
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .rob img{
+        width: 90%;
+    }
+}
